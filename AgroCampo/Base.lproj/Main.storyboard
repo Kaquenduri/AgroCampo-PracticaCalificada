@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mBj-RU-wSd">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parcelas-->
+        <scene sceneID="IaP-NB-fXl">
+            <objects>
+                <navigationController id="qas-Dh-OD4" customClass="ParcelasViewController.swift" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Parcelas" image="square.grid.2x2" catalog="system" id="gz0-rP-Tuj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yrz-Fn-sZK">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrJ-Ad-ITH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3173" y="323"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="8Oe-yc-qho">
+            <objects>
+                <navigationController id="JMR-X6-lLb" customClass="PerfilViewController.swift" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" id="f8h-d2-zKC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zrz-my-jZS">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSL-Ec-ZXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="68"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Rs-kP-xNe">
+            <objects>
+                <tabBarController id="mBj-RU-wSd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3uu-gN-iis">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JMR-X6-lLb" kind="relationship" relationship="viewControllers" id="U6b-PR-R4J"/>
+                        <segue destination="N0t-6u-IzE" kind="relationship" relationship="viewControllers" id="tor-x7-drU"/>
+                        <segue destination="qas-Dh-OD4" kind="relationship" relationship="viewControllers" id="reX-Za-qGR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef5-EB-TXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1993" y="-18"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="bLS-Oi-wHj">
+            <objects>
+                <navigationController id="N0t-6u-IzE" customClass="ResumenViewController.swift" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Resumen" image="chart.bar" catalog="system" id="UJH-lr-Sgn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1o7-bD-igj">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NU-dk-tOH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3129" y="-358"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="128" height="89"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="square.grid.2x2" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
