@@ -138,15 +138,26 @@ Se implementa una pantalla utilizando SwiftUI (por ejemplo, el resumen).
 
 ---
 
+
 ## 🖼️ Screenshots
 
-```md
-![Pantalla principal](screenshots/home.png)
-![Detalle de parcela](screenshots/detail.png)
+### Onboarding
+![Onboarding](screenshots/onboarding.png)
+
+### Pantalla principal
+![Home](screenshots/home.png)
+
+### Detalle de parcela
+![Detalle](screenshots/detail.png)
+
+### Formulario
 ![Formulario](screenshots/form.png)
+
+### Resumen
 ![Resumen](screenshots/resumen.png)
+
+### Perfil
 ![Perfil](screenshots/profile.png)
-```
 
 ---
 
